@@ -1,0 +1,35 @@
+.cart {
+    margin: 0 0 20px 0;
+
+    &__single-items-title {
+        margin: 0 0 10px 0;
+    }
+
+    &__summary-title {
+        margin: 0 0 10px 0;
+    }
+
+    &__summary {
+        background-color: rgb(228, 216, 216);
+        padding: 10px;
+        text-align: right;
+
+        #discountCodeId {
+            text-align: right;
+            margin: 0 10px 0 0;
+            padding: 0 5px;
+        }
+
+        p {
+            margin: 10px 10px 0 0;
+        }
+
+        &__buttons {
+            margin: 0;
+        }
+
+        &__discount-input-label {
+            font-size: 14px;
+        }
+    }
+}

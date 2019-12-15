@@ -1,0 +1,43 @@
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 165, 165);
+    height: 80px;
+    font-size: 26px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    &__logo__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__container {
+        width: 944px;
+        margin: 0 28px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__links {
+        display: flex;
+
+        &__single {
+            margin-left: 20px;
+
+            &__cart {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 20px;
+                position: relative;
+            }
+        }
+    }
+}

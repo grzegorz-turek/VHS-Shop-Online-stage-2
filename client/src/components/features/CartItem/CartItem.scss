@@ -1,0 +1,61 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: rgb(228, 216, 216);
+    padding: 10px;
+    margin: 0 0 20px 0;
+
+    &__poster {
+        height: 135px;
+        flex: 2;
+        border: 1px solid rgb(200, 165, 165);
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        flex: 8;
+        text-align: center;
+    }
+
+    &__pcsprice {
+        flex: 3;
+        text-align: center;
+    }
+
+    &__button-plus {
+        .button {
+            margin: 10px;
+        }
+    }
+
+    &__amount {
+        flex: 2;
+        text-align: center;
+
+    }
+
+    &__button-minus {
+        .button {
+            margin: 10px;
+        }
+    }
+
+    &__total-price {
+        flex: 3;
+        text-align: center;
+    }
+
+    &__button-x {
+        text-align: center;
+
+        .button {
+            margin: 10px;
+        }
+    }
+}

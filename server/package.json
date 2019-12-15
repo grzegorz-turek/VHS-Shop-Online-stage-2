@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "online shop back-end files",
+  "main": "index.js",
+  "author": "Grzegorz Turek",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "mongo-sanitize": "^1.0.1",
+    "mongoose": "^5.7.12",
+    "nodemon": "^2.0.1"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}

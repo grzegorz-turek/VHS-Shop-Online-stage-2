@@ -1,0 +1,16 @@
+.sortingBar {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    margin-bottom: 14px;
+
+    &__element {
+        margin: 0 0 0 20px;
+
+        &__filter {
+            margin: 0 0 0 20px;
+            cursor: pointer;
+        }
+    }
+}
+

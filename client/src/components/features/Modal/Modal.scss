@@ -1,0 +1,27 @@
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal__modal-window {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 10px 10px 40px 10px;
+    width: 400px;
+    margin-top: 80px;
+
+    .button {
+      align-self: flex-end;
+    }
+  }
+}
