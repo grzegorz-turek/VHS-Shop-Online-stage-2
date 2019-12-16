@@ -1,6 +1,6 @@
 # VHS Online Movie Shop
 
-## 1. To run project remotely (heroku and mongo servers): [ click here](https://still-plains-42198.herokuapp.com/)
+## 1. To run project remotely (heroku and mongo servers): [ click here](https://vhs-online.herokuapp.com/)
 
 ## 2. To run project locally:
 - clone repository
