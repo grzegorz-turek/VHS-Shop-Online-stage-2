@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { API_URL } from '../config';
+import { API_URL, BASE_URL } from '../config';
 
 /* SELECTORS */
 export const getFilms = ({ films }) => films.data;
@@ -191,7 +191,8 @@ export const loadFilmsThunkRequest = () => {
 
         dispatch(startRequest());
         try {
-            let res = await axios.get(`${ API_URL}/films`)
+            let res = await axios.get(`${BASE_URL}${API_URL}/films`)
+            //let res = await axios.get(`${ API_URL}/films`)
             dispatch(loadFilmsInRedux(res.data));
             dispatch(endRequest());
         }
@@ -207,7 +208,8 @@ export const loadSingleFilmThunkRequest = id => {
 
         dispatch(startRequest());
         try {
-            let res = await axios.get(`${ API_URL}/films/${id}`)
+            let res = await axios.get(`${BASE_URL}${API_URL}/films/${id}`)
+            //let res = await axios.get(`${ API_URL}/films/${id}`)
             dispatch(loadSingleFilmInRedux(res.data));
             dispatch(endRequest());
         }
@@ -227,7 +229,8 @@ export const loadFilmsRangeThunkRequest = (page = 1 , filmsPerPage = 6, sortBy =
             const startAt = (page - 1) * filmsPerPage;
             const limit = filmsPerPage;
     
-            let res = await axios.get(`${API_URL}/films/range/${startAt}/${limit}/${sortBy}`);
+            let res = await axios.get(`${BASE_URL}${API_URL}/films/range/${startAt}/${limit}/${sortBy}`);
+            //let res = await axios.get(`${API_URL}/films/range/${startAt}/${limit}/${sortBy}`);
     
             const payload = {
                 films: res.data.films,
@@ -251,7 +254,8 @@ export const addToCartThunkRequestNew = ( id, cart ) => {
         dispatch(startRequest());
         try {
     
-            let res = await axios.get(`${ API_URL}/films/${id}`)
+            let res = await axios.get(`${BASE_URL}${API_URL}/films/${id}`)
+            //let res = await axios.get(`${ API_URL}/films/${id}`)
             let existed_item = cart.find(item => res.data.id === item.id)
 
             if (existed_item) {
